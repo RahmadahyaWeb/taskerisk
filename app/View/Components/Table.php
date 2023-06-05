@@ -23,7 +23,7 @@ class Table extends Component
     public function render(): View|Closure|string
     {
         return view('components.table', [
-            'tasks' => Task::latest()->get()
+            'tasks' => Task::get()
         ]);
     }
 }
