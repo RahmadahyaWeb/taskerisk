@@ -14,7 +14,7 @@ class AppLayout extends Component
     public $title;
     public function __construct($title = null)
     {
-        $this->title = $title ?? 'Rahmadahya';
+        $this->title = $title ?? 'Taskerisk';
     }
 
     /**
