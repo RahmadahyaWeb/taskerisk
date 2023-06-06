@@ -43,7 +43,7 @@
         input[type="color"]:focus,
         .uneditable-input:focus {
             outline: none;
-            border: 1px solid #ffffff;
+            border: 1px solid #dc3545;
             -webkit-box-shadow: none !important;
             -moz-box-shadow: none !important;
             box-shadow: none !important;
