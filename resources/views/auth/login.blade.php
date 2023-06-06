@@ -35,7 +35,7 @@
                         <div class="row mt-4">
                             <div class="col">
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-outline-danger">
                                         Login
                                     </button>
                                 </div>

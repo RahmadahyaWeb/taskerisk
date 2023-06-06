@@ -25,14 +25,14 @@
                                     <td>{{ $no++ }}</td>
                                     <td>{{ $task->title }}</td>
                                     <td>
-                                        <a href="{{ route('tasks.edit', $task) }}" class="btn btn-sm btn-warning"
+                                        <a href="{{ route('tasks.edit', $task) }}" class="btn btn-sm btn-outline-warning"
                                             type="button">Edit</a>
                                     </td>
                                     <td>
                                         <form action="{{ route('tasks.destroy', $task) }}" method="post">
                                             @csrf
                                             @method('delete')
-                                            <button class="btn btn-sm btn-danger" type="submit">Delete</button>
+                                            <button class="btn btn-sm btn-outline-danger" type="submit">Delete</button>
                                         </form>
                                     </td>
                                 </tr>

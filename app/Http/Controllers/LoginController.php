@@ -11,7 +11,6 @@ use Illuminate\Validation\ValidationException as ValidationValidationException;
 class LoginController extends Controller
 {
 
-
     /**
      * Show the form for creating a new resource.
      */

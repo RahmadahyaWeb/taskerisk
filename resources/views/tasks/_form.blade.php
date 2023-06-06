@@ -8,6 +8,6 @@
 </div>
 <div class="col-12 mb-2">
     <div class="d-grid gap-2">
-        <button class="btn btn-primary btn-sm" type="submit">{{ $button }}</button>
+        <button class="btn btn-outline-danger btn-sm" type="submit">{{ $button }}</button>
     </div>
 </div>
