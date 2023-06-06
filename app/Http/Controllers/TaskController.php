@@ -13,6 +13,9 @@ class TaskController extends Controller
      */
     public function index()
     {
+        $title = 'Delete User!';
+        $text = "Are you sure you want to delete?";
+        confirmDelete($title, $text);
         return view('tasks.index', [
             'task' => new Task()
         ]);
@@ -24,7 +27,7 @@ class TaskController extends Controller
     public function store(TaskRequest $request)
     {
         Task::create($request->all());
-        return back();
+        return back()->with('success', 'Task was created!');
     }
 
     /**
@@ -54,7 +57,7 @@ class TaskController extends Controller
             'title' => $request->title
         ]);
 
-        return back();
+    return back()->with('success', 'Task was updated!');
     }
 
     /**
@@ -63,6 +66,6 @@ class TaskController extends Controller
     public function destroy(Task $task)
     {
         $task->delete();
-        return redirect()->route('tasks.index');
+        return redirect()->route('tasks.index')->with('success', 'Task was deleted!');
     }
 }

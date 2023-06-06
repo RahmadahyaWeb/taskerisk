@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="">
 
 <head>
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
         }
 
         .navbar-nav a {
-            color: white;
+            color: black;
         }
 
         .container .hero {
@@ -24,6 +24,14 @@
 
         .dropdown .dropdown-item:active {
             background-color: #dc3545;
+        }
+
+        .swal2-popup .swal2-styled:focus {
+            box-shadow: none !important;
+        }
+
+        .swal2-confirm {
+            background-color: #dc3545 !important;
         }
 
         textarea:focus,
@@ -56,6 +64,7 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
     <x-navbar></x-navbar>
     <div class="container class my-3 hero">
         {{ $slot }}
