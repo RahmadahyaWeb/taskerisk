@@ -43,10 +43,14 @@
         input[type="color"]:focus,
         .uneditable-input:focus {
             outline: none;
-            border: 1px solid #dc3545;
+            border: 1px solid #ffffff;
             -webkit-box-shadow: none !important;
             -moz-box-shadow: none !important;
             box-shadow: none !important;
+        }
+
+        input {
+            caret-color: #dc3545;
         }
     </style>
 </head>
