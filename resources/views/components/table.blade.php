@@ -12,6 +12,7 @@
                             <th>Title</th>
                             <th>Edit</th>
                             <th>Delete</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,11 +35,17 @@
                                             Delete
                                         </a>
                                     </td>
+                                    <td>
+                                        @livewire('toggle-switch', [
+                                            'model' => $task,
+                                            'field' => 'status',
+                                        ])
+                                    </td>
                                 </tr>
                             @endforeach
                         @else
                             <tr>
-                                <td colspan="4" class="text-center">
+                                <td colspan="5" class="text-center">
                                     There is no tasks yet!
                                 </td>
                             </tr>

@@ -16,6 +16,7 @@ class TaskController extends Controller
         $title = 'Delete User!';
         $text = "Are you sure you want to delete?";
         confirmDelete($title, $text);
+        
         return view('tasks.index', [
             'task' => new Task()
         ]);
